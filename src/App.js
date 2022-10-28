@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { ErrorBoundary } from "react-error-boundary";
+import Fallback from "./components/Fallback";
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import Books from "./pages/Books";
+import Users from "./pages/Users";
+import Page404 from "./pages/Page404";
 
-function App() {
+// create a root component
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main__content">
+      <ErrorBoundary FallbackComponent={Fallback}>
+        <NavBar />
+
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/books" element={<Books />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="*" element={<Page404 />} />
+        </Routes>
+      </ErrorBoundary>
     </div>
   );
-}
+};
 
 export default App;
