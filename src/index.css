@@ -130,8 +130,8 @@ span {
 
 .home__description {
   text-align: center;
-  /* margin-bottom: 1rem; */
-  line-height: 1.5;
+  margin: 1rem;
+  
 }
 
 /* search input styles */
@@ -141,7 +141,7 @@ span {
   background-color: var(--search);
   display: flex;
   align-items: center;;
-  margin: 1.2rem auto;
+  margin: 2rem auto;
   padding: 0 1.25rem;
   border: 1px solid var(--light);
   border-radius: 3rem;
@@ -168,6 +168,30 @@ span {
   border-radius: 50%;
   background-color: var(--search);
   cursor: pointer;
+}
+
+.signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+  
+.signup__btn {
+  width: 100%;
+  max-width: 150px;
+  background-color: var(--button);
+  color: var(--light);
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-light);
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .quote {
@@ -206,7 +230,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   padding: 1rem;
 }
 
@@ -307,6 +331,15 @@ span {
 button:hover {
   background-color: var(--button);
   color: white;
+}
+
+/* SIGN_UP STYLES */
+.signup__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 /* PAGE404 STYLES */

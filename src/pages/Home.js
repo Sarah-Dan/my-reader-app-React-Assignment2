@@ -1,3 +1,6 @@
+import { Link, Outlet } from "react-router-dom";
+import SignUp from "./SignUp";
+
 // create a Home component
 const Home = () => {
   return (
@@ -21,13 +24,17 @@ const Home = () => {
         <button className="book__search--btn"
         type="submit"><img src={require("../Images/searchicon.png")} style={{width:30}}/></button>
       </form>
-      <div className="quote">
+      <div className="signup">
+        <Link to="signup" className="signup__btn">Get Started</Link>
+      </div>
+      {/* <div className="quote">
         <p className="quote__text">
           “A reader lives a thousand lives before he dies . . . The man who
           never reads lives only one.”
         </p>
         <p className="quote__author">George R.R. Martin</p>
-      </div>
+      </div> */}
+      <Outlet />
     </div>
   );
 };
