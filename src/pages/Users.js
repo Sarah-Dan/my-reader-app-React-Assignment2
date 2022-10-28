@@ -46,18 +46,20 @@ const Users = () => {
     <div>
       <h2>Users</h2>
       <div className="users">
-        {users.map((user) => {
-          const { id, name, country, phone, email, picture } = user;
+        {users.map((user, index) => {
+
+          // const { id, name, location:{location.country}, phone, email, picture } = user;
+          console.log(user)
           return (
-            <div className="user" key={id.value}>
-              <img className="user__image" src={picture.large} alt={name.first} />
+            <div className="user" key={index}>
+              <img className="user__image" src={user.picture.large}/>
               <div className="user__info">
                 <div className="user__name">
-                  Name: {name.first} {name.last}
+                  Name: {user.name.first} {user.name.last}
                 </div>
-                 <p className="user__phone">Phone: {phone}</p>
-                <p className="user__email">Email: {email}</p>
-                <p className="user__country">Country:{country}</p>
+                 <p className="user__phone">Phone: {user.phone}</p>
+                <p className="user__email">Email: {user.email}</p>
+                <p className="user__country">Country:{user.location.country}</p>
               </div>
             </div>
           );
