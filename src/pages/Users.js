@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 // create users component
 const Users = () => {
   // state variables
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([]);  // users array
   const [page, setPage] = useState(5);
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
