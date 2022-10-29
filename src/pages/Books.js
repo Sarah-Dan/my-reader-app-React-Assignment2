@@ -6,7 +6,7 @@ const Books = () => {
   return (
     <div className="books__container">
       <h2>Favorite Books</h2>
-      
+
       {data.map((book) => {
         return (
           <div className="book__list" key={book.id}>

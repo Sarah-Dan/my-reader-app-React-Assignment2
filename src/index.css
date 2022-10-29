@@ -131,7 +131,6 @@ span {
 .home__description {
   text-align: center;
   margin: 1rem;
-  
 }
 
 /* search input styles */
@@ -140,7 +139,7 @@ span {
   max-width: 400px;
   background-color: var(--search);
   display: flex;
-  align-items: center;;
+  align-items: center;
   margin: 2rem auto;
   padding: 0 1.25rem;
   border: 1px solid var(--light);
@@ -170,15 +169,9 @@ span {
   cursor: pointer;
 }
 
-.signup{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
-  text-align: center;
+.signup {
 }
-  
+
 .signup__btn {
   width: 100%;
   max-width: 150px;
@@ -268,18 +261,43 @@ span {
 }
 
 /* USERS PAGE */
-.users {
+.users__heading {
+  margin-top: 1rem;
+}
+
+.users__top {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.8rem 0;
+}
+
+.register__btn {
+  width: 100%;
+  max-width: 150px;
+  background-color: var(--button);
+  color: var(--light);
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-light);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.users__list {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 4rem;
   padding: 1rem;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 1rem auto;
 }
 
 .user {
@@ -290,8 +308,7 @@ span {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  padding: 2rem;
-  margin: 0.8rem 0;
+  padding: 1.4rem;
   background-color: var(--light);
   color: var(--title);
   border-radius: 0.5rem;
@@ -314,23 +331,33 @@ span {
   width: 100%;
 }
 
-.button {
-  background-color: var(--button);
-  color: white;
-  border-radius: 10px;
-  border: none;
+.page__btn {
   width: 100%;
-  max-width: 100px;
-  padding: 0.8rem 1.5rem;
-  text-align: center;
-  font-size: 1rem;
-  margin: 1rem;
+  max-width: 80px;
+  background-color: var(--button);
+  color: var(--light);
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-light);
+  padding: 0.5rem;
+  margin: 1rem 0.2rem;
+  border-radius: 0.5rem;
+  border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
-button:hover {
-  background-color: var(--button);
-  color: white;
+.array__btn {
+  width: 100%;
+  max-width: 40px;
+  border: none;
+  color: var(--dark);
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-light);
+  padding: 0.5rem;
+  margin: 2rem 0.1rem 0.2rem 0.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* SIGN_UP STYLES */
@@ -340,6 +367,54 @@ button:hover {
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+  margin: 5rem auto;
+  border: 1px solid var(--light);
+  border-radius: 0.5rem;
+  box-shadow: #d9d9ea 0px 0px 10px 0px;
+  background-color: var(--search);
+  font-family: var(--font-family-family);
+  color: var(--logo);
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup__heading {
+  color: var(--light);
+  font-size: var(--font-large);
+  font-weight: var(--font-weight-medium);
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.signup__input {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--dark);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.signup__btn {
+  width: 100%;
+  max-width: 150px;
+  background-color: var(--button);
+  color: var(--light);
+  font-size: var(--font-smaller);
+  font-weight: var(--font-weight-light);
+  padding: 0.7rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
 
 /* PAGE404 STYLES */

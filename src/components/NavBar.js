@@ -22,7 +22,7 @@ const NavBar = () => {
           className="nav__link"
           to="/books"
         >
-          My Books 
+          My Books
         </NavLink>
         <NavLink
           style={({ isActive }) =>

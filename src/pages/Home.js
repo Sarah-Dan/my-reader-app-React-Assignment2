@@ -15,26 +15,33 @@ const Home = () => {
         </p>
       </div>
       {/* search bar .....add to the app*/}
-      <form action="https://books.google.com/" target="_blank" rel="noopener noreferrer" method="get" className="book__search">
+      <form
+        action="https://books.google.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        method="get"
+        className="book__search"
+      >
         <input
           className="book__search--input"
           type="text"
           placeholder="Search for your favorite books"
         />
-        <button className="book__search--btn"
-        type="submit"><img src={require("../Images/searchicon.png")} style={{width:30}}/></button>
+        <button className="book__search--btn" type="submit">
+          <img
+            src={require("../Images/searchicon.png")}
+            style={{ width: 30 }}
+          />
+        </button>
       </form>
-      <div className="signup">
-        <Link to="signup" className="signup__btn">Get Started</Link>
-      </div>
-      {/* <div className="quote">
+
+      <div className="quote">
         <p className="quote__text">
           “A reader lives a thousand lives before he dies . . . The man who
           never reads lives only one.”
         </p>
         <p className="quote__author">George R.R. Martin</p>
-      </div> */}
-      <Outlet />
+      </div>
     </div>
   );
 };

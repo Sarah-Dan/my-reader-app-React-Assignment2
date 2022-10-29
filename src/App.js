@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Books from "./pages/Books";
 import Users from "./pages/Users";
+import SignUp from "./pages/SignUp";
 import Page404 from "./pages/Page404";
 
 // create a root component
@@ -15,9 +16,12 @@ const App = () => {
         <NavBar />
 
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/books" element={<Books />} />
-          <Route path="/users" element={<Users />} />
+          <Route path="users">
+            <Route index element={<Users />} />
+            <Route path=":id" element={<SignUp />} />
+          </Route>
           <Route path="*" element={<Page404 />} />
         </Routes>
       </ErrorBoundary>
