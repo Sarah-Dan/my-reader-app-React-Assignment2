@@ -59,7 +59,7 @@ const Users = () => {
             );
           })}
         </div>
-        <div>
+        <div className="pagination">
           {
             <button
               className="page__btn"

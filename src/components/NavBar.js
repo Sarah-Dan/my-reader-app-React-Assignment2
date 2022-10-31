@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="logo">Reader!</div>
-      <div className="nav__links">
+      <div id="nav__toggler" className="nav__links">
         <NavLink
           style={({ isActive }) =>
             isActive ? { color: "yellow" } : { color: "white" }

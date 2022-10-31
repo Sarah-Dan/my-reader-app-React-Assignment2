@@ -1,3 +1,21 @@
+export const NavBarToggle = [
+  {
+    id: 1,
+    title: "Home",
+    path: "/",
+  },
+  {
+    id: 2,
+    title: "My Books",
+    path: "/books",
+  },
+  {
+    id: 3,
+    title: "Users",
+    path: "/users",
+  },
+];
+
 // create a data.js file for books list
 const data = [
   {
