@@ -28,7 +28,7 @@ const Home = () => {
         />
         <button className="book__search--btn" type="submit">
           <img
-            src={require("../Images/searchicon.png")} alt="search icon"
+            src={require("../assets/Images/searchicon.png")} alt="search icon"
             style={{ width: 30 }}
           />
         </button>

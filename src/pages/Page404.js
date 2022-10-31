@@ -13,7 +13,7 @@ const Page404 = () => {
       <h2 className="page404__title">{error.title}</h2>
       <img
         className="page404__image"
-        src={require(`../Images/${error.img}`)}
+        src={require(`../assets/Images/${error.img}`)}
         alt="404"
       />
 
