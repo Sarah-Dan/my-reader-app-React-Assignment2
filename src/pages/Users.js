@@ -42,10 +42,10 @@ const Users = () => {
         {error && <p>{error.message}</p>}
         <div className="users__list">
           {users.map((user) => {
-            const { index, name, location, phone, email, picture } = user;
+            const { login, name, location, phone, email, picture } = user;
 
             return (
-              <div className="user" key={index}>
+              <div className="user" key={login.uuid}>
                 <img className="user__image" src={picture.large} alt="user" />
                 <div className="user__info">
                   <div className="user__name">
