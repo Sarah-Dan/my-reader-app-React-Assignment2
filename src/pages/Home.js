@@ -1,6 +1,3 @@
-import { Link, Outlet } from "react-router-dom";
-import SignUp from "./SignUp";
-
 // create a Home component
 const Home = () => {
   return (
@@ -29,7 +26,7 @@ const Home = () => {
         />
         <button className="book__search--btn" type="submit">
           <img
-            src={require("../Images/searchicon.png")}
+            src={require("../Images/searchicon.png")} alt="search icon"
             style={{ width: 30 }}
           />
         </button>

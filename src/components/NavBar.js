@@ -8,7 +8,7 @@ const NavBar = () => {
       <div className="nav__links">
         <NavLink
           style={({ isActive }) =>
-            isActive ? { color: "grey" } : { color: "white" }
+            isActive ? { color: "yellow" } : { color: "white" }
           }
           className="nav__link"
           to="/"
@@ -17,7 +17,7 @@ const NavBar = () => {
         </NavLink>
         <NavLink
           style={({ isActive }) =>
-            isActive ? { color: "grey" } : { color: "white" }
+            isActive ? { color: "yellow" } : { color: "white" }
           }
           className="nav__link"
           to="/books"
@@ -26,7 +26,7 @@ const NavBar = () => {
         </NavLink>
         <NavLink
           style={({ isActive }) =>
-            isActive ? { color: "grey" } : { color: "white" }
+            isActive ? { color: "yellow" } : { color: "white" }
           }
           className="nav__link"
           to="/users"

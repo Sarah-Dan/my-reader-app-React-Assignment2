@@ -28,8 +28,7 @@ const Users = () => {
   return (
     <div className="users">
       <div className="register">
-        <h3>Join Reader users all over the world</h3>
-
+        <h3>Join Reader! users all over the world</h3>
         <div className="signup">
           <Link to="SignUp" className="register__btn">
             Register
@@ -42,21 +41,19 @@ const Users = () => {
         {loading && <p>Please wait....Loading...</p>}
         {error && <p>{error.message}</p>}
         <div className="users__list">
-          {users.map((user, index) => {
-            // const { id, name, location, phone, email, picture } = user;
+          {users.map((user) => {
+            const { index, name, location, phone, email, picture } = user;
 
             return (
               <div className="user" key={index}>
-                <img className="user__image" src={user.picture.large} />
+                <img className="user__image" src={picture.large} alt="user" />
                 <div className="user__info">
                   <div className="user__name">
-                    Name: {user.name.first} {user.name.last}
+                    Name: {name.first} {name.last}
                   </div>
-                  <p className="user__phone">Phone: {user.phone}</p>
-                  <p className="user__email">Email: {user.email}</p>
-                  <p className="user__country">
-                    Country:{user.location.country}
-                  </p>
+                  <p className="user__phone">Phone: {phone}</p>
+                  <p className="user__email">Email: {email}</p>
+                  <p className="user__country">Country:{location.country}</p>
                 </div>
               </div>
             );

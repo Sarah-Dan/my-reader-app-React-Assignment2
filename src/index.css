@@ -133,7 +133,7 @@ span {
   margin: 1rem;
 }
 
-/* search input styles */
+/* book search styles */
 .book__search {
   width: 100%;
   max-width: 400px;
@@ -169,34 +169,17 @@ span {
   cursor: pointer;
 }
 
-.signup {
-}
-
-.signup__btn {
-  width: 100%;
-  max-width: 150px;
-  background-color: var(--button);
-  color: var(--light);
-  font-size: var(--font-small);
-  font-weight: var(--font-weight-light);
-  padding: 1rem;
-  margin-top: 0.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .quote {
   font-family: "Source Serif Pro", serif;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
   color: black;
+  padding: 0.5rem ;
   margin: 2rem auto;
   box-shadow: #d9d9ea 0px 0px 10px 0px;
   border-radius: 0 35px;
@@ -204,16 +187,15 @@ span {
 
 .quote__text {
   font-size: var(--font-small);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-weight-bold);
   text-align: center;
   margin: 0.5rem auto;
   padding: 1rem;
 }
 
 .quote__author {
-  font-size: var(--font-smaller);
-  font-weight: var(--font-medium);
-  padding: 0.5rem;
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
   margin-bottom: 1rem;
   color: var(--author);
 }
@@ -269,6 +251,21 @@ span {
   display: flex;
   justify-content: space-between;
   text-align: center;
+}
+
+.signup__btn {
+  width: 100%;
+  max-width: 150px;
+  background-color: var(--button);
+  color: var(--light);
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-light);
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .register {
