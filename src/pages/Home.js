@@ -1,3 +1,5 @@
+import "../assets/styles/home.css";
+
 // create a Home component
 const Home = () => {
   return (
@@ -22,7 +24,7 @@ const Home = () => {
         <input
           className="book__search--input"
           type="text"
-          placeholder="Search for your favorite books"
+          placeholder="Search for books"
         />
         <button className="book__search--btn" type="submit">
           <img

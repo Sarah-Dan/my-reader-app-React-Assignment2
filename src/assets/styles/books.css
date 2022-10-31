@@ -1,0 +1,41 @@
+/* MY BOOKS PAGE */
+.book__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.book__info {
+  background-color: var(--light);
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: #d9d9ea 0px 0px 10px 0px;
+}
+
+.book__title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--title);
+}
+
+.book__author {
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--author);
+}
+
+.book__description {
+  font-family: var(--font-family);
+  font-size: var(--font-smaller);
+  margin-top: 1rem;
+}

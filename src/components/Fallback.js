@@ -1,3 +1,6 @@
+import "../assets/styles/fallback.css";
+
+// create a Fallback component
 const ErrorFallback = ({ error }) => {
   return (
     <div role="alert" className="fallback">

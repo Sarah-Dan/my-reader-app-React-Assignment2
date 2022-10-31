@@ -1,0 +1,107 @@
+/* HOMEPAGE STYLES */
+.home__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home__greeting {
+  text-align: center;
+  font-size: var(--font-large);
+  margin-bottom: 1rem;
+}
+
+/* ANIMATION STYLES */
+@keyframes reader {
+  0% {
+    color: var(--button);
+  }
+  50% {
+    color: var(--animation);
+  }
+  100% {
+    color: var(--logo);
+  }
+}
+
+span {
+  font-family: var(--font-family-logo);
+  font-size: var(--font-large);
+  animation-name: reader;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.home__description {
+  text-align: center;
+  margin: 1rem;
+}
+
+/* book search styles */
+.book__search {
+  width: 100%;
+  max-width: 350px;
+  background-color: var(--search);
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+  border: 1px solid var(--light);
+  border-radius: 3rem;
+}
+
+.book__search--input {
+  width: 100%;
+  background-color: var(--search);
+  color: var(--light);
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: var(--font-small);
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+.book__search--btn {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--search);
+  cursor: pointer;
+}
+
+.quote {
+  font-family: "Source Serif Pro", serif;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 0.5rem;
+  margin: 2rem auto;
+  box-shadow: #d9d9ea 0px 0px 10px 0px;
+  border-radius: 0 35px;
+}
+
+.quote__text {
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin: 0.5rem auto;
+  padding: 1rem;
+}
+
+.quote__author {
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1rem;
+  color: var(--author);
+}

@@ -1,3 +1,5 @@
+import "../assets/styles/page404.css";
+
 // create a 404 page component
 const Page404 = () => {
   const error = {

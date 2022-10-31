@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
+import "../assets/styles/users.css";
 
 // create users component
 const Users = () => {

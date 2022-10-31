@@ -1,4 +1,5 @@
 import data from "./data";
+import "../assets/styles/books.css";
 
 // create books component
 
