@@ -41,7 +41,7 @@ span {
 /* book search styles */
 .book__search {
   width: 100%;
-  max-width: 350px;
+  /* max-width: 350px; */
   background-color: var(--search);
   display: flex;
   align-items: center;
@@ -78,7 +78,7 @@ span {
 .quote {
   font-family: "Source Serif Pro", serif;
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
