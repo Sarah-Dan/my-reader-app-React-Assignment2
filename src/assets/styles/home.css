@@ -41,7 +41,6 @@ span {
 /* book search styles */
 .book__search {
   width: 100%;
-  /* max-width: 350px; */
   background-color: var(--search);
   display: flex;
   align-items: center;
